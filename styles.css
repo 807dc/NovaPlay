@@ -61,7 +61,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg-dark);
+    background: var(--bg-darker);
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
@@ -69,49 +69,48 @@ body {
 }
 
 /* ============================================
-   ANIMATED BACKGROUND
+   ANIMATED BACKGROUND - STYLISH & SIMPLE
    ============================================ */
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
     background:
-        radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.05) 0%, transparent 50%);
-    animation: backgroundPulse 15s ease-in-out infinite;
-    z-index: 0;
+        radial-gradient(circle at 30% 30%, rgba(124, 58, 237, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(76, 29, 149, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(109, 40, 217, 0.08) 0%, transparent 40%);
+    animation: meshRotate 40s linear infinite;
+    z-index: -1;
     pointer-events: none;
+    filter: blur(80px);
 }
 
 body::after {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px),
-        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px);
-    z-index: 0;
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+    z-index: -1;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
-@keyframes backgroundPulse {
-
-    0%,
-    100% {
-        opacity: 1;
-        transform: scale(1);
+@keyframes meshRotate {
+    0% {
+        transform: rotate(0deg);
     }
 
-    50% {
-        opacity: 0.8;
-        transform: scale(1.05);
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -126,12 +125,22 @@ body::after {
 }
 
 .glass-card {
-    background: rgba(20, 20, 35, 0.6);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    border: 1px solid var(--border-glass);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-card);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    box-shadow:
+        0 8px 32px 0 rgba(0, 0, 0, 0.37),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(124, 58, 237, 0.4);
+    box-shadow:
+        0 12px 48px 0 rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(124, 58, 237, 0.2);
 }
 
 
@@ -160,15 +169,17 @@ body::after {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
     font-size: clamp(3rem, 8vw, 6rem);
-    letter-spacing: 0.05em;
-    background: linear-gradient(135deg, #ffffff, var(--accent-violet), #ffffff);
-    background-size: 200% 200%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff 0%, var(--accent-light) 50%, #fff 100%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradientShift 5s ease infinite;
+    animation: gradientShift 8s ease infinite;
     margin-bottom: var(--spacing-md);
-    filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.3));
+    filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.4));
+    position: relative;
 }
 
 @keyframes gradientShift {
@@ -426,18 +437,19 @@ nav a:hover {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     color: var(--text-primary);
-    background: rgba(20, 20, 35, 0.6);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20px);
-    border: 2px solid var(--border-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-full);
     padding: 16px 24px 16px 50px;
     width: 100%;
     max-width: 500px;
     outline: none;
-    transition: all 0.3s ease;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l4.38 4.37a1 1 0 0 1-1.41 1.42l-4.38-4.38zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>');
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: url('data:image/svg+xml;utf8,<svg fill="rgba(255,255,255,0.5)" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l4.38 4.37a1 1 0 0 1-1.41 1.42l-4.38-4.38zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>');
     background-repeat: no-repeat;
-    background-position: 18px center;
+    background-position: 20px center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar:focus {
