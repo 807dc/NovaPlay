@@ -418,5 +418,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/313160\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnou",
         "mode": "solo"
+    },
+    {
+        "title": "Farming Simulator 17",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/447020\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnov",
+        "mode": "multiplayer"
     }
 ]
