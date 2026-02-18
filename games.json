@@ -234,5 +234,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/353640\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mno1",
         "mode": "solo"
+    },
+    {
+        "title": "War in a Box Paper Tanks",
+        "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/308460\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mno2",
+        "mode": "solo"
     }
 ]
