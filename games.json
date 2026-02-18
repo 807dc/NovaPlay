@@ -216,5 +216,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/527340\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnnY",
         "mode": "multiplayer"
+    },
+    {
+        "title": "Human Fall Flat",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/477160\\/27fe12f404980d3e0189dd34ffa871061b7b22ca\\/capsule_616x353_alt_assets_26.jpg",
+        "link": "https://www.clictune.com/mnnZ",
+        "mode": "multiplayer"
     }
 ]
