@@ -282,5 +282,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/533300\\/capsule_616x353.jpg",
         "link": "ttps://www.clictune.com/mno8",
         "mode": "solo"
+    },
+    {
+        "title": "Geometry Dash",
+        "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/322170\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mno9",
+        "mode": "solo"
     }
 ]
