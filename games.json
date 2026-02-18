@@ -198,5 +198,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/361280\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnnV",
         "mode": "solo"
+    },
+    {
+        "title": "Forza Horizon 4",
+        "image": "https://gaming-cdn.com/images/products/2682/orig/forza-horizon-4-pc-xbox-one-xbox-series-x-s-microsoft-store-cover.jpg?v=1752055441",
+        "link": "https://www.clictune.com/mnbG",
+        "mode": "multiplayer"
     }
 ]
