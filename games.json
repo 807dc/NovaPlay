@@ -364,5 +364,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/346010\\/3dd4102cace20931d7ec1a0ffcb92474df2736c6\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnol",
         "mode": "solo"
+    },
+    {
+        "title": "Kerbal Space Program",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/220200\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnom",
+        "mode": "solo"
     }
 ]
