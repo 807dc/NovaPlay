@@ -120,6 +120,10 @@ app.post("/api/add-game", async (req, res) => {
 
   try {
     const games = await readGames();
+    // Vérifier si le titre existe déjà
+    const exists = games.some(g => g.title.toLowerCase() === clean.title.toLowerCase());
+    if (exists) return okJson(res, 400, { error: "Ce jeu est déjà présent dans la liste" });
+
     games.push(clean);
     await writeGames(games);
     return okJson(res, 200, { success: true, message: "Jeu ajouté." });
@@ -141,6 +145,11 @@ app.post("/api/update-game", async (req, res) => {
   try {
     const games = await readGames();
     if (i >= games.length) return okJson(res, 400, { error: "Index hors limite" });
+
+    // Vérifier si le nouveau titre existe déjà ailleurs
+    const exists = games.some((g, idx) => idx !== i && g.title.toLowerCase() === clean.title.toLowerCase());
+    if (exists) return okJson(res, 400, { error: "Un autre jeu porte déjà ce nom" });
+
     games[i] = clean;
     await writeGames(games);
     return okJson(res, 200, { success: true, message: "Jeu modifié." });
