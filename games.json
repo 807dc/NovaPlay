@@ -394,5 +394,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/341800\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnoq",
         "mode": "solo"
+    },
+    {
+        "title": "BeamNG.drive",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/284160\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnor",
+        "mode": "solo"
     }
 ]
