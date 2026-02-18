@@ -264,5 +264,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/246620\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mno6",
         "mode": "multiplayer"
+    },
+    {
+        "title": "Trackmania",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/2225070\\/capsule_616x353.jpg",
+        "link": "https://drive.usercontent.google.com/download?id=13ZjsiO_6T-_lmAVOGVueiXs1NO7Sqq6Z&authuser=0",
+        "mode": "solo"
     }
 ]
