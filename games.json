@@ -351,12 +351,12 @@
     },
     {
         "title": "LEGO Batman The Videogame",
-        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/21000\\/header.jpg",
-        "link": "https://www.clictune.com/mnok",
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21000/header.jpg",
+        "link": "#",
         "mode": "solo",
         "hasModal": true,
-        "modalId": "LEGO-Batman-The-Videogame",
-        "modalTitle": "Comment choisir la langue ?",
-        "modalContent": "<p>Pour choisir la langue de votre jeu, vous devez ex\\u00e9cuter en admin <strong>Language_setup.exe<\\/strong>, puis vous lancer votre jeu via <strong>LEGOBatman.exe<\\/strong>.<\\/p>"
+        "modalId": "lego-batman",
+        "modalTitle": "Comment installer LEGO Batman ?",
+        "modalContent": "<ul><li>Une fois téléchargé, exécutez en admin <strong>Language_setup.exe</strong> pour choisir la langue.</li><li>Lancez ensuite le jeu via <strong>LEGOBatman.exe</strong>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.clictune.com/mnok\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
     }
 ]
