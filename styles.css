@@ -819,6 +819,49 @@ nav a:hover {
 }
 
 /* ============================================
+   PAGINATION
+   ============================================ */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    animation: fadeSlideDown 0.8s 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.pagination-btn {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-sm);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+    color: var(--text-primary);
+    background: rgba(124, 58, 237, 0.3);
+    border-color: var(--accent-violet);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 @media (max-width: 768px) {
