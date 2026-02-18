@@ -358,5 +358,11 @@
         "modalId": "lego-batman",
         "modalTitle": "Comment installer LEGO Batman ?",
         "modalContent": "<ul><li>Une fois téléchargé, exécutez en admin <strong>Language_setup.exe</strong> pour choisir la langue.</li><li>Lancez ensuite le jeu via <strong>LEGOBatman.exe</strong>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.clictune.com/mnok\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
+    },
+    {
+        "title": "Besiege",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/346010\\/3dd4102cace20931d7ec1a0ffcb92474df2736c6\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnol",
+        "mode": "solo"
     }
 ]
