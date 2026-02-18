@@ -198,5 +198,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/361280\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnnV",
         "mode": "solo"
+    },
+    {
+        "title": "Forza Horizon 4",
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270880/d9b2ee173096a4dabcc574835de06f603d5c9797/capsule_616x353_alt_assets_7.jpg",
+        "link": "https://www.clictune.com/mnjd",
+        "mode": "solo"
     }
 ]
