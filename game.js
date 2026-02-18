@@ -1,7 +1,11 @@
 // ============================================
 // GAMES — chargement depuis /api/games (Vercel + GitHub)
 // ============================================
-// En local ou si l’API échoue, on utilise le fallback ci-dessous.
+const GAMES_PER_PAGE = 40;
+let currentPage = 1;
+let allGames = [];
+let filteredGames = [];
+let currentFilter = 'all';
 
 const GAMES_FALLBACK = [
     { title: "Forza Horizon 4", image: "https://gaming-cdn.com/images/products/2682/orig/forza-horizon-4-pc-xbox-one-xbox-series-x-s-microsoft-store-cover.jpg?v=1752055441", link: "https://www.clictune.com/mnbG", mode: "multiplayer" },
@@ -28,24 +32,32 @@ const GAMES_FALLBACK = [
     { title: "Garry's mod", image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000/ecae0f862ac2f087f1581122999dd1e6281ce3b5/capsule_616x353.jpg", link: "https://www.clictune.com/mnjd", mode: "solo" }
 ];
 
-// Fonction pour générer les éléments de jeu
+// Fonction pour générer les éléments de jeu (uniquement pour la page actuelle)
 function generateGameElements(games) {
     const gamesGrid = document.getElementById('gamesGrid');
     if (!gamesGrid) return;
 
     gamesGrid.innerHTML = '';
-    const list = Array.isArray(games) ? games : GAMES_FALLBACK;
 
-    list.forEach((game, index) => {
+    const startIndex = (currentPage - 1) * GAMES_PER_PAGE;
+    const endIndex = startIndex + GAMES_PER_PAGE;
+    const paginatedGames = games.slice(startIndex, endIndex);
+
+    if (paginatedGames.length === 0) {
+        gamesGrid.innerHTML = '<p class="coming-soon-message">No games found.</p>';
+        return;
+    }
+
+    paginatedGames.forEach((game, index) => {
         const gameLink = document.createElement('a');
-        gameLink.className = 'jeu-thumb-link';
+        gameLink.className = 'jeu-thumb-link animating';
         gameLink.href = game.link;
         gameLink.target = '_blank';
         gameLink.rel = 'noopener';
         gameLink.setAttribute('data-title', game.title);
         gameLink.setAttribute('data-mode', game.mode);
-        gameLink.classList.add('animating');
-        gameLink.style.animationDelay = (0.4 + index * 0.08) + 's';
+        gameLink.style.animationDelay = (0.1 + index * 0.03) + 's';
+
         gameLink.addEventListener('animationend', function () {
             gameLink.classList.remove('animating');
             gameLink.style.animationDelay = '';
@@ -95,12 +107,11 @@ function generateGameElements(games) {
 
 // Fonction pour générer les modales
 function generateModals(games) {
-    const container = document.body;
-    const list = Array.isArray(games) ? games : GAMES_FALLBACK;
+    // Supprimer les anciennes modales générées (pour éviter les doublons lors du changement de page)
+    document.querySelectorAll('.modal-bg').forEach(m => m.remove());
 
-    list.forEach(game => {
+    games.forEach(game => {
         if (!game.hasModal) return;
-        if (document.getElementById(game.modalId + '-modal-bg')) return;
 
         const modalBg = document.createElement('div');
         modalBg.id = game.modalId + '-modal-bg';
@@ -130,7 +141,7 @@ function generateModals(games) {
         modal.appendChild(title);
         modal.appendChild(content);
         modalBg.appendChild(modal);
-        container.appendChild(modalBg);
+        document.body.appendChild(modalBg);
 
         const closeModalFn = () => {
             modalBg.style.display = 'none';
@@ -149,45 +160,72 @@ function generateModals(games) {
     });
 }
 
-// Filtres et recherche
-let currentFilter = 'all';
+// Fonction pour gérer la pagination UI
+function renderPagination(totalItems) {
+    const container = document.getElementById('paginationContainer');
+    if (!container) return;
 
+    container.innerHTML = '';
+    const totalPages = Math.ceil(totalItems / GAMES_PER_PAGE);
+
+    if (totalPages <= 1) return;
+
+    for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'pagination-btn' + (i === currentPage ? ' active' : '');
+        btn.textContent = i;
+        btn.addEventListener('click', () => {
+            currentPage = i;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            updateDisplay();
+        });
+        container.appendChild(btn);
+    }
+}
+
+function updateDisplay() {
+    generateGameElements(filteredGames);
+    generateModals(filteredGames);
+    renderPagination(filteredGames.length);
+}
+
+// Filtres et recherche
 function applyFilters() {
     const query = (document.getElementById('gameSearch')?.value || '').trim().toLowerCase();
-    const games = document.querySelectorAll('#gamesGrid .jeu-thumb-link');
 
-    games.forEach(game => {
-        const title = (game.getAttribute('data-title') || '').toLowerCase();
-        const mode = game.getAttribute('data-mode') || '';
+    filteredGames = allGames.filter(game => {
+        const title = (game.title || '').toLowerCase();
+        const mode = game.mode || '';
         const matchesSearch = title.includes(query);
         const matchesFilter = currentFilter === 'all' || mode === currentFilter;
-
-        game.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+        return matchesSearch && matchesFilter;
     });
+
+    currentPage = 1; // Reset to first page when filtering
+    updateDisplay();
 }
 
 async function initGamePage() {
     const gamesGrid = document.getElementById('gamesGrid');
     if (!gamesGrid) return;
 
-    gamesGrid.innerHTML = '<p class="games-loading">Chargement des jeux...</p>';
-    let games = [];
+    gamesGrid.innerHTML = '<p class="games-loading">Loading games...</p>';
 
     try {
         const res = await fetch('/api/games', { cache: 'no-store' });
         if (res.ok) {
             const data = await res.json();
-            games = Array.isArray(data) ? data : (data.games || data.items || []);
+            allGames = Array.isArray(data) ? data : (data.games || data.items || []);
         }
     } catch (e) {
-        console.warn('Chargement API échoué, fallback:', e.message);
+        console.warn('API load failed, using fallback:', e.message);
+        allGames = GAMES_FALLBACK;
     }
 
-    if (!games.length) games = GAMES_FALLBACK;
+    if (!allGames.length) allGames = GAMES_FALLBACK;
 
-    gamesGrid.innerHTML = '';
-    generateGameElements(games);
-    generateModals(games);
+    filteredGames = [...allGames];
+    applyFilters(); // Initial display
 
     const gameSearch = document.getElementById('gameSearch');
     if (gameSearch) {
