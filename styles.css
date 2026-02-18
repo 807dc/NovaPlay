@@ -670,10 +670,7 @@ nav a:hover {
     font-weight: 900;
     font-size: 1.8rem;
     margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, var(--accent-light), var(--accent-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .modal ul,
