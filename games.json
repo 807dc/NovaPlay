@@ -240,5 +240,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/308460\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mno2",
         "mode": "solo"
+    },
+    {
+        "title": "Mr President",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/3333670\\/aaf2e5382da6d68cd536e996db7e900c4f5924e4\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mno3",
+        "mode": "solo"
     }
 ]
