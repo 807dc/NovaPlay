@@ -252,5 +252,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/239030\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mno4",
         "mode": "solo"
+    },
+    {
+        "title": "Hotline Miami",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/219150\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mno5",
+        "mode": "solo"
     }
 ]
