@@ -503,7 +503,7 @@
     },
     {
         "title": "Planet Coaster",
-        "image": "tps:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/493340\\/capsule_616x353.jpg",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/493340\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnoH",
         "mode": "solo"
     },
