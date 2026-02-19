@@ -690,5 +690,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/648350\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnph",
         "mode": "solo"
+    },
+    {
+        "title": "Ailment",
+        "image": "https://shared.fastly.steamstatic.com//store_item_assets//steam//apps//1167530//capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpi",
+        "mode": "solo"
     }
 ]
