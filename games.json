@@ -440,5 +440,11 @@
         "modalId": "sims-4",
         "modalTitle": "Problème avec Les Sims 4 ?",
         "modalContent": "<ul><li><strong>Problème de répertoire :</strong> Supprimez <code>GameVersion.txt</code> dans <code>Documents\\Electronic Arts\\The Sims 4</code>.</li><li><strong>Patch FR :</strong> Téléchargez le patch <a href=\"https://www.clictune.com/7q9q\" target=\"_blank\">ici</a>.</li><li><strong>Erreur DLL :</strong> Si MSVCP120.dll manque, téléchargez-le <a href=\"https://bit.ly/2WUXZdJ\" target=\"_blank\">ici</a>.</li><li><strong>Galerie :</strong> Déconnectez-vous d'Origin/EA, puis suivez les instructions au lancement du jeu.</li></ul><div class=\"modal-btns\"><a href=\"https://www.clictune.com/mnox\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
+    },
+    {
+        "title": "The Escapists 2",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/641990\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnoy",
+        "mode": "multiplayer"
     }
 ]
