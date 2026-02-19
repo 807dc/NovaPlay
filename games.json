@@ -744,5 +744,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/327030\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpp",
         "mode": "solo"
+    },
+    {
+        "title": "Golden panic",
+        "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/614550\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpq",
+        "mode": "solo"
     }
 ]
