@@ -762,5 +762,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/233720\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnps",
         "mode": "solo"
+    },
+    {
+        "title": "The Elder Scrolls V Skyrim",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/489830\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpt",
+        "mode": "solo"
     }
 ]
