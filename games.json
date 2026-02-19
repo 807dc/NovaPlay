@@ -548,5 +548,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/220240\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnoQ",
         "mode": "solo"
+    },
+    {
+        "title": "Far Cry 4",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/298110\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnoR",
+        "mode": "solo"
     }
 ]
