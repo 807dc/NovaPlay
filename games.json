@@ -587,7 +587,7 @@
         "hasModal": true,
         "modalId": "raft",
         "modalTitle": "Comment jouer à Raft en ligne ?",
-        "modalContent": "<ul><li>Veillez à ce que <strong>Steam</strong> soit ouvert en arrière-plan.</li><li>Ne liez pas le jeu à votre compte Steam.</li><li>En cas de souci, lancez le jeu en <strong>mode administrateur</strong>.</li><li>Pour le multijoueur, utilisez la version disponible sur <a href=\"https://stggege.org/multijoueur\" target=\"_blank\">stggege.org</a>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.youtube.com/watch?v=v4hjFk1bU-8\" class=\"download-btn\" style=\"background: #ff0000; border-color: #ff0000;\" target=\"_blank\" rel=\"noopener\">Tuto Vidéo</a><a href=\"https://www.clictune.com/mnp0\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
+        "modalContent": "<ul><li>Veillez à ce que <strong>Steam</strong> soit ouvert en arrière-plan.</li><li>Ne liez pas le jeu à votre compte Steam.</li><li>En cas de souci, lancez le jeu en <strong>mode administrateur</strong>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.clictune.com/mnp0\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
     },
     {
         "title": "Sleeping dogs",
