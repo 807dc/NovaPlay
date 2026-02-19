@@ -702,5 +702,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/2661250\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpj",
         "mode": "solo"
+    },
+    {
+        "title": "RimWorld",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/294100\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpk",
+        "mode": "solo"
     }
 ]
