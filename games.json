@@ -464,5 +464,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/516750\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnoB",
         "mode": "multiplayer"
+    },
+    {
+        "title": "Metro Exodus",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/412020\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnoC",
+        "mode": "solo"
     }
 ]
