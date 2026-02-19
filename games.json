@@ -720,5 +720,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/320140\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpl",
         "mode": "solo"
+    },
+    {
+        "title": "Marble Run",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/726720\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpm",
+        "mode": "solo"
     }
 ]
