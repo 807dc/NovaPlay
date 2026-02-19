@@ -648,5 +648,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/616850\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpa",
         "mode": "solo"
+    },
+    {
+        "title": "Door Kickers Action Squad",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/686200\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpb",
+        "mode": "multiplayer"
     }
 ]
