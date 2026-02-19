@@ -750,5 +750,11 @@
         "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/614550\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpq",
         "mode": "solo"
+    },
+    {
+        "title": "Farming Simulator 19",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/787860\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpr",
+        "mode": "solo"
     }
 ]
