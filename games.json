@@ -606,5 +606,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/2649420\\/8bf702ad51e1cc2b75b38d18a27faee236cefc69\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnp3",
         "mode": "solo"
+    },
+    {
+        "title": "Construction Simulator 2015",
+        "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/289950\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnp4",
+        "mode": "multiplayer"
     }
 ]
