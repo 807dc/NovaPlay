@@ -666,5 +666,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/1724440\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpd",
         "mode": "solo"
+    },
+    {
+        "title": "Tiny Echo",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/686880\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpe",
+        "mode": "solo"
     }
 ]
