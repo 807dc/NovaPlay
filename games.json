@@ -756,5 +756,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/787860\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpr",
         "mode": "solo"
+    },
+    {
+        "title": "Surgeon Simulator 2013",
+        "image": "https:\\/\\/shared.akamai.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/233720\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnps",
+        "mode": "solo"
     }
 ]
