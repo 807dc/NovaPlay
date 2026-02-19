@@ -536,5 +536,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/233270\\/capsule_616x353.jpg",
         "link": "ttps://www.clictune.com/mnoO",
         "mode": "solo"
+    },
+    {
+        "title": "Far Cry 2",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/19900\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnoP",
+        "mode": "solo"
     }
 ]
