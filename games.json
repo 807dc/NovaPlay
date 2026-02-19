@@ -581,12 +581,12 @@
     },
     {
         "title": "Raft",
-        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/648800\\/capsule_616x353.jpg",
-        "link": "https://www.clictune.com/mnp0",
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648800/capsule_616x353.jpg",
+        "link": "#",
         "mode": "multiplayer",
         "hasModal": true,
-        "modalId": "Raft",
-        "modalTitle": "Comment Jouer en ligne ?",
-        "modalContent": "<p><strong>Voici comment r\\u00e9soudre le probl\\u00e8me que vous pourrez rencontrer :<\\/strong><\\/p><p><br><\\/p><ul><li>Avoir Steam lanc\\u00e9 en fond.<\\/li><li>Ne pas le relier \\u00e0 Steam.<\\/li><li>Et en dernier recours, lancez le jeu en mode administrateur.<\\/li><li>Pour jouer en multijoueur avec vos amis, il faut que vous ayez la version du site <a href=\\\"https:\\/\\/stggege.org\\/multijoueur\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https:\\/\\/stggege.org\\/multijoueur<\\/a>.<\\/li><\\/ul><p><a href=\\\"https:\\/\\/www.youtube.com\\/embed\\/v4hjFk1bU-8?showinfo=0\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https:\\/\\/www.youtube.com\\/embed\\/v4hjFk1bU-8?showinfo=0<\\/a><\\/p><p><br><\\/p>"
+        "modalId": "raft",
+        "modalTitle": "Comment jouer à Raft en ligne ?",
+        "modalContent": "<ul><li>Veillez à ce que <strong>Steam</strong> soit ouvert en arrière-plan.</li><li>Ne liez pas le jeu à votre compte Steam.</li><li>En cas de souci, lancez le jeu en <strong>mode administrateur</strong>.</li><li>Pour le multijoueur, utilisez la version disponible sur <a href=\"https://stggege.org/multijoueur\" target=\"_blank\">stggege.org</a>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.youtube.com/watch?v=v4hjFk1bU-8\" class=\"download-btn\" style=\"background: #ff0000; border-color: #ff0000;\" target=\"_blank\" rel=\"noopener\">Tuto Vidéo</a><a href=\"https://www.clictune.com/mnp0\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
     }
 ]
