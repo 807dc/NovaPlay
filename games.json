@@ -554,5 +554,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/298110\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnoR",
         "mode": "solo"
+    },
+    {
+        "title": "Far Cry 5",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/552520\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnoS",
+        "mode": "solo"
     }
 ]
