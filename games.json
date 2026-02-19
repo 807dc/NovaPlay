@@ -732,5 +732,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/729720\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnpn",
         "mode": "solo"
+    },
+    {
+        "title": "Descenders",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/681280\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnpo",
+        "mode": "multiplayer"
     }
 ]
