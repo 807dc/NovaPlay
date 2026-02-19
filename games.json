@@ -594,5 +594,11 @@
         "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/202170\\/capsule_616x353.jpg",
         "link": "https://www.clictune.com/mnp1",
         "mode": "solo"
+    },
+    {
+        "title": "Prison Architect",
+        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/233450\\/capsule_616x353.jpg",
+        "link": "https://www.clictune.com/mnp2",
+        "mode": "solo"
     }
 ]
