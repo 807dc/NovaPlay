@@ -765,12 +765,12 @@
     },
     {
         "title": "The Elder Scrolls V Skyrim",
-        "image": "https:\\/\\/shared.fastly.steamstatic.com\\/store_item_assets\\/steam\\/apps\\/489830\\/capsule_616x353.jpg",
-        "link": "https://www.clictune.com/mnpt",
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/capsule_616x353.jpg",
+        "link": "#",
         "mode": "solo",
         "hasModal": true,
-        "modalId": "Elder",
-        "modalTitle": "Comment installer The Elder Scrolls V Skyrim ?",
-        "modalContent": "<p><span style=\\\"color: var(--text-default); background-color: oklab(0.219499 0.00211129 -0.00744916);\\\">Probl\\u00e8me de plein \\u00e9cran sur skyrim ?<\\/span><\\/p><p><br><\\/p><p>Il faut vous rendre dans <strong>Documents\\\\My Games\\\\Skyrim Special Edition GOG\\\\<\\/strong>, puis ouvrir le fichier <span style=\\\"color: rgb(0, 138, 0);\\\">skyrimprefs.ini<\\/span>.<\\/p><p>Recherchez la ligne <strong>bFullScreen = 0<\\/strong> et remplacez le <span style=\\\"color: rgb(230, 0, 0);\\\">0<\\/span> par <span style=\\\"color: rgb(0, 138, 0);\\\">1<\\/span>,<\\/p><p>ensuite enregistrez et relancez votre jeu.<\\/p><p><br><\\/p><p><span style=\\\"background-color: oklab(0.219499 0.00211129 -0.00744916); color: var(--text-default);\\\">Probl\\u00e8me de langue Fr ?<\\/span><\\/p><p><br><\\/p><p><span style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">il faut aller dans <\\/span><strong style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">Documents\\\\My Games\\\\Skyrim Special Edition GOG\\\\<\\/strong><span style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\"> et aller dans le fichier <\\/span><span style=\\\"color: rgb(0, 138, 0); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">Skyrim.ini<\\/span><span style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">, puis changer la ligne <\\/span><strong style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">sLanguage=ENGLISH<\\/strong><span style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\"> en <\\/span><strong style=\\\"color: oklab(0.952331 0.000418991 -0.00125992); background-color: oklab(0.678888 0.00325716 -0.011175 \\/ 0.0784314);\\\">sLanguage=FRENCH<\\/strong><\\/p>"
+        "modalId": "skyrim",
+        "modalTitle": "Comment installer Skyrim ?",
+        "modalContent": "<ul><li><strong>Problème de plein écran ?</strong> Allez dans <code>Documents\\My Games\\Skyrim Special Edition GOG\\</code>. Ouvrez <code>skyrimprefs.ini</code>, cherchez <code>bFullScreen=0</code> et remplacez par <code>bFullScreen=1</code>.</li><li><strong>Problème de langue FR ?</strong> Dans le même dossier, ouvrez <code>Skyrim.ini</code> et remplacez <code>sLanguage=ENGLISH</code> par <code>sLanguage=FRENCH</code>.</li></ul><div class=\"modal-btns\"><a href=\"https://www.clictune.com/mnpt\" class=\"download-btn\" target=\"_blank\" rel=\"noopener\">Télécharger le jeu</a></div>"
     }
 ]
